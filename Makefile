@@ -1,10 +1,16 @@
-bin: atividade1.c ps_script.c
+all: atividade1 ps_script
+
+bin: atividade1.c
 	gcc $< -o $@
-	
+
+script: ps_script.c
+	gcc $< -o $@
+
 .PHONY: run clean
 
 run:
-	./bin & ./ps_script
+	./atividade1 & ./ps_script
 
 clean:
-	rm bin && rm ps_script
+	rm atividade1 && rm ps_script
+

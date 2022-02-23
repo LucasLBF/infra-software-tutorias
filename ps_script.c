@@ -6,7 +6,7 @@ int main(void)
 {
   for (int i = 0; i < 12; i++) {
     printf("%d segundo(s)\n", i + 1);
-    system("ps -l");
+    system("ps -l | grep Z");
     sleep(1);
   }
   return 0;
