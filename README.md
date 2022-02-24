@@ -7,7 +7,7 @@ Clone repository
 git clone https://github.com/LucasLBF/infra-software-tutorias
 ```
 
-Swith to project directory
+Switch to project directory
 ```sh
 cd infra-software-tutorias
 ```
