@@ -1,13 +1,14 @@
-# include <stdio.h>
-# include <unistd.h>
-# include <sys/types.h>
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
 
-int main(void)
-{
+int main(void) {
   pid_t pid = fork();
   // processo filho comeca
   if (pid == 0) {
-    printf("child process pid: %d", getpid()); 
+    printf("=====================================\n");
+    printf("child process pid: %d\n", getpid());
+    printf("=====================================\n");
   } else {
     // processo pai espera por 11 segundos
     sleep(11);
@@ -16,4 +17,3 @@ int main(void)
   // processo filho termina
   return 0;
 }
-
